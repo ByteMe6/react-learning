@@ -1,0 +1,8 @@
+.item{
+  background-color: #565656; /* цвет комфортного серого */
+  border-radius: 20px;
+  padding: 20px;
+  width: fit-content;
+  min-width: 350px;
+  margin-top: 20px;
+}

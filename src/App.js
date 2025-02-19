@@ -1,9 +1,12 @@
-import FriendsList from "./components/FriendsList";
-import "./index.css" 
+import EventList from "./components/eventList/EventList";
+import { events } from "./recipies";
 
 function App() {
   return (
-    <FriendsList/>
+    <div>
+      <h1>Список событий</h1>
+      <EventList events={events} />
+    </div>
   );
 }
 
