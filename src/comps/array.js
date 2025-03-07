@@ -1,0 +1,92 @@
+export let arr = [
+  {
+    nickname: "Doris Rempel DVM",
+    password: "Q3pM9zpe8s0yazW",
+    email: "Gene.Gibson74@hotmail.com",
+    id: "24",
+  },
+  {
+    nickname: "Ms. Irvin Hauck",
+    password: "Xp8F2fj_LGXBBcU",
+    email: "Kennedy15@gmail.com",
+    id: "25",
+  },
+  {
+    nickname: "Brooke Jakubowski",
+    password: "xp6Z_Am4avJvYlE",
+    email: "Cara.Lind12@yahoo.com",
+    id: "26",
+  },
+  {
+    nickname: "Patricia Hamill",
+    password: "UPLAROdRzLsqX05",
+    email: "Kendra94@hotmail.com",
+    id: "27",
+  },
+  {
+    nickname: "Andre Carter",
+    password: "c4mTbFunq5Jm5lu",
+    email: "Carlie12@hotmail.com",
+    id: "28",
+  },
+  {
+    nickname: "Miss Roger Kirlin",
+    password: "VfmldzhDHvPoOxK",
+    email: "Jamir_Mante82@yahoo.com",
+    id: "29",
+  },
+  {
+    nickname: "Deborah Marks",
+    password: "4CJPBTVkcE15eOg",
+    email: "Pansy.Hartmann@yahoo.com",
+    id: "30",
+  },
+  {
+    nickname: "Kirk Osinski",
+    password: "W4JkNjZlSqpDd9_",
+    email: "John_Wehner67@gmail.com",
+    id: "31",
+  },
+  {
+    nickname: "Arlene Schoen",
+    password: "TXBFJL4RYuydpQ8",
+    email: "Nelle62@gmail.com",
+    id: "32",
+  },
+  {
+    nickname: "Ernesto Bernier",
+    password: "jd5kHhVHNyh1cVe",
+    email: "Mafalda69@hotmail.com",
+    id: "33",
+  },
+  {
+    nickname: "Miss Steven Medhurst DVM",
+    password: "IzEbV74xqTwHSJE",
+    email: "Mozelle_Kozey6@hotmail.com",
+    id: "34",
+  },
+  {
+    nickname: "Wallace Smitham",
+    password: "IM1CpVTnMBW060E",
+    email: "Felipe.Cummerata36@gmail.com",
+    id: "35",
+  },
+  {
+    nickname: "Domingo Halvorson",
+    password: "sWVKEhCz75ywude",
+    email: "Korey.West@yahoo.com",
+    id: "36",
+  },
+  {
+    nickname: "Sonja Gibson",
+    password: "xHSIfPC9_06UO3T",
+    email: "Broderick_Rowe@hotmail.com",
+    id: "37",
+  },
+  {
+    nickname: "Mr. Geoffrey Bruen",
+    password: "ePzZN4wlvf9872e",
+    email: "Zola_Price97@gmail.com",
+    id: "38",
+  },
+];
