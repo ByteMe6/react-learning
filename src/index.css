@@ -5,9 +5,53 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding: 5%;
+  padding-top: 20px;
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+li {
+  border-radius: 10px;
+  list-style: none;
+  width: fit-content;
+  min-width: 150px;
+  padding: 10px;
+  margin: 5px;
+  background-color: #f0f0f0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease, transform 0.3s ease;
+}
+
+li:hover {
+  background-color: #e0e0e0;
+  transform: translateY(-2px);
+}
+
+.sList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+ul{
+  width: 90%;
+}
+
+.selected {
+  /* border: 4px solid ; */
+  transition: border 0.3s ease, transform 0.3s ease;
+  transform: scale(1.05);
+  background-color: rgb(229, 255, 206);
+}
+.selected:hover{
+    /* border: 4px solid ; */
+    transition: border 0.3s ease, transform 0.3s ease;
+    transform: scale(1.05);
+    background-color: rgb(229, 255, 206);
 }
