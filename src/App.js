@@ -1,25 +1,25 @@
-import { Component } from "react";
-import Choice from "./components/Choice";
-import StickerList from "./components/StickerList";
-import sArr from "./components/stickers.json";
+import logo from './logo.svg';
+import './App.css';
 
-class App extends Component {
-  state = {
-    selectedSticker: "",
-  };
-
-  handleSelect = (label) => {
-    this.setState({ selectedSticker: label });
-  };
-
-  render() {
-    return (
-      <main className="main">
-        <Choice sArr={sArr} selectedSticker={this.state.selectedSticker} onSelect={this.handleSelect} />
-        <StickerList sArr={sArr} selectedSticker={this.state.selectedSticker} />
-      </main>
-    );
-  }
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
+  );
 }
 
 export default App;
