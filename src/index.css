@@ -1,13 +1,152 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Reboot CSS - A minimal reset for consistent styling across browsers */
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Remove default margin and padding */
+html, body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a default font */
+body {
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+
+/* Set default list styles */
+ul, ol {
+    list-style: none;
+}
+
+/* Set default link styles */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Set default image styles */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Set default table styles */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/* Add a default background color */
+body {
+    background-color: #f8f9fa;
+}
+
+
+/* Основные стили для всего приложения */
+body {
+    font-family: 'Roboto', sans-serif; /* Используем более современный шрифт */
+    background: linear-gradient(to right, #f0f4f8, #e0e7ef); /* Градиентный фон */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Стили для контейнера приложения */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Стили для заголовка */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 2.5em; /* Увеличенный размер шрифта */
+}
+
+/* Стили для списка задач */
+ul {
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #ffffff; /* Белый фон для задач */
+    margin-bottom: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s; /* Плавный переход цвета и анимация */
+}
+
+li:hover {
+    background-color: #f1f1f1; /* Цвет при наведении */
+    transform: translateY(-2px); /* Легкий подъем при наведении */
+}
+
+li:last-child {
+    margin-bottom: 0;
+}
+
+/* Стили для чекбоксов */
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Стили для кнопок */
+button {
+    background-color: #007bff; /* Синий цвет */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Плавный переход цвета и анимация */
+}
+
+button:hover {
+    background-color: #0056b3; /* Темный синий при наведении */
+    transform: scale(1.05); /* Увеличение кнопки при наведении */
+}
+
+/* Стили для поля ввода */
+input[type="text"] {
+    width: calc(100% - 100px);
+    padding: 10px;
+    border: 1px solid #ced4da; /* Светло-серый цвет */
+    border-radius: 5px;
+    transition: border-color 0.3s; /* Плавный переход цвета */
+}
+
+input[type="text"]:focus {
+    border-color: #80bdff; /* Цвет рамки при фокусе */
+    outline: none; /* Убираем стандартный контур */
+}
+
+/* Стили для фильтра */
+input[type="text"][placeholder] {
+    font-style: italic;
+    color: #aaa;
+}
+
+/* Стили для информационного блока */
+.info {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f1f1f1; /* Светлый фон для информационного блока */
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
