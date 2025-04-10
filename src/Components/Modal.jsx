@@ -1,43 +1,17 @@
-import { Component } from "react";
-import { MdCloseFullscreen } from "react-icons/md";
+import React from 'react';
+import './modal.css'; // Создайте файл стилей для модального окна
 
-class Modal extends Component {
-  componentDidMount() {
-    document.addEventListener('keydown', this.handleKeyDown);
-    document.body.style.overflow = 'hidden'; // Запрещаем прокрутку фона
-  }
+const Modal = ({ isOpen, onClose, children }) => {
+  if (!isOpen) return null;
 
-  componentWillUnmount() {
-    document.removeEventListener('keydown', this.handleKeyDown);
-    document.body.style.overflow = 'visible'; // Возвращаем прокрутку
-  }
-
-  handleKeyDown = (event) => {
-    if (event.key === 'Escape') {
-      this.props.onClose();
-    }
-  }
-
-  handleBackdropClick = (event) => {
-    if (event.target === event.currentTarget) {
-      this.props.onClose();
-    }
-  }
-
-  render() {
-    const text = "Модальное окно (Modal) - это элемент интерфейса, который отображается поверх основного содержимого страницы. Оно часто используется для показа важной информации, требующей внимания пользователя, или для выполнения определенных действий без перехода на другую страницу. Модальные окна помогают сфокусировать внимание пользователя на конкретной задаче.";
-
-    return (
-      <div className="backdrop" onClick={this.handleBackdropClick}>
-        <div className="modal">
-          <p className="randomText">{text}</p>
-          <button className="close" onClick={this.props.onClose}>
-            <MdCloseFullscreen className="closeIcon"/>
-          </button>
-        </div>
+  return (
+    <div className="modal-overlay">
+      <div className="modal-content">
+        <button className="close-button" onClick={onClose}>Закрыть</button>
+        {children}
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
 
 export default Modal;
