@@ -13,14 +13,13 @@ class App extends Component {
     if (storedTodos) {
       this.setState({ todos: JSON.parse(storedTodos) });
     } else {
-      this.setState({ todos: TodoArr }); // Если нет сохраненных задач, используем начальные
+      this.setState({ todos: TodoArr }); 
     }
   }
 
-  // Метод для обновления списка задач
   handleUpdateTodos = (updatedTodos) => {
     this.setState({ todos: updatedTodos }, () => {
-      localStorage.setItem("todos", JSON.stringify(this.state.todos)); // Сохранение в localStorage
+      localStorage.setItem("todos", JSON.stringify(this.state.todos));
     });
   }
 
